@@ -3,10 +3,10 @@ The target of homework 3 is Instance segmentation for Tiny PASCAL VOC dataset an
 
 ## Hardware   
   Use Linux with PyTorch to train this model  
-  -PyTorch >= 1.1.
-  -Python >= 3.6.
-  -tensorboardX
-  -Other common packages.
+  -PyTorch >= 1.1.  
+  -Python >= 3.6.  
+  -tensorboardX  
+  -Other common packages.  
 
 ## Dataset 
   * The training data have 1349 images with a target file in COCO annotations format.
