@@ -3,20 +3,20 @@ The target of homework 3 is Instance segmentation for Tiny PASCAL VOC dataset an
 
 ## Hardware   
   Use Linux with PyTorch to train this model  
-  -PyTorch >= 1.1.  
-  -Python >= 3.6.  
-  -tensorboardX  
-  -Other common packages.  
+  - PyTorch >= 1.1.  
+  - Python >= 3.6.  
+  - tensorboardX  
+  - Other common packages.  
 
 ## Dataset 
   * The training data have 1349 images with a target file in COCO annotations format.
   * The test data have 100 images. 
   
 ## Training model
-  * First download the fc-reduced VGG-16 PyTorch base network weights at: https://s3.amazonaws.com/amdegroot-models/vgg16_reducedfc.pth
-  * To train SSD using the train script simply specify the parameters listed in train.py as a flag or manually change them.  
-    - python train.py
-## Test SSD
+  * First download the weights from here https://drive.google.com/file/d/1vaDqYNB__jTB7_p9G6QTMvoMDlGkHzhP/view
+  * To train YOLACT using the train script simply specify the parameters listed in train.py as a flag or manually change them.  
+    - python train.py --config=res101_custom_config
+## Evalution
   * To evaluate a trained network:  
-    - python test.py
+    - python eval.py --trained_model=res101_custom_100000.pth
   * Then, it will generate a.json file with test result
